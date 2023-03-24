@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face {
+    font-family: Roboto;
+
+    src: url('../fonts/Roboto.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: bold;
+
+    src: url('../fonts/Robotobold.ttf');
+}
+
+
+
+body {
+    font-family: Roboto;
+}
+
+
+
+.container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+
+header {
+    border-bottom: 1px solid #E5E5E5;
+
+    padding: 25px 0px;
+}
+
+.header .container {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.header .logo img {
+    vertical-align: bottom;
+}
+
+header .menu {
+    margin-left: 244px;
+}
+
+header .menu ul {
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: row;
+}
+
+header .menu-item {
+    margin-right: 115px;
+}
+
+header .container .menu ul a {
+    color: #030305;
+
+    font-size: 15px;
+
+    text-decoration: none;
+}
+
+header .menu-item a:hover {
+    border-bottom: 2px solid #000;
+}
+
+
+
+section.main {
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+    padding: 104px 0 154px 0;
+}
+
+.main .main-info {
+    max-width: 855px;
+}
+
+section.main .main-info .main-title {
+    font-size: 80px;
+    font-weight: bold;
+
+    line-height: 110px;
+
+    color: #030305;
+
+    margin-bottom: 40px;
+}
+
+.main .main-info .main-text {
+    font-size: 16px;
+    font-weight: 400;
+
+    color: #030305;
+    
+    line-height: 130%;
+
+    max-width: 502px;
+
+    margin-bottom: 40px;
+}
+
+.main .main-action button.button {
+    width: 334px;
+    height: 64px;
+}
+
+
+
+.button {
+    padding: 20px;
+
+    background-color: #030305;
+
+    border: 0;
+
+    box-sizing: border-box;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 0.02em;
+
+    font-weight: 700;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    transition: background-color .5s;
+}
+
+.button:hover {
+    cursor: pointer;
+
+    background-color: #575757;
+}
+
+
+
+.sub-title {
+    font-weight: bold;
+    font-size: 60px;
+
+    line-height: 70.31px;
+
+    color: #030305;
+}
+
+
+
+section.car {
+    padding: 100px 0;
+}
+
+.car .container .car-items {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.car .container .car-item {
+    max-width: 384px;
+
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+.car .car-item .car-image {
+    vertical-align: bottom;
+}
+
+.car-item-title {
+    font-weight: bold;
+    font-size: 24px;
+
+    line-height: 150%;
+
+    text-align: center;
+
+    letter-spacing: 0.02em;
+
+    color: #030305;
+
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+
+.car .car-item-info {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.car-item .car-item-info .car-item-point {
+    width: 110px;
+    height: 92px;
+
+    margin: 0 7.5px;
+}
+
+.car-item-point img {
+    margin-bottom: 11px;
+}
+
+.car-item-action {
+    margin-top: 13px;
+}
+
+.car .container .car-item-action button {
+    width: 384px;
+    height: 54px;
+
+    padding: 15px 122px;
+}
+
+.car-item .car-item-point > div:nth-child(2) {
+    font-weight: 700;
+
+    color: #030305;
+}
+
+
+
+section.price {
+    overflow: hidden;
+}
+
+.price .container {
+    position: relative;
+
+    padding-bottom: 121px;
+}
+
+.price .container .sub-title {
+    margin-bottom: 20px;
+}
+
+.price .container .price-text {
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 130%;
+
+    color: #5D5D5F;
+
+    margin-bottom: 60px;
+}
+
+.price .price-form {
+    width: 344px;
+}
+
+.price .price-form input.price-input {
+    padding: 22px 18px;
+
+    width: 344px;
+    height: 65px;
+
+    border: 1px solid #5d5d5f;
+
+    background: #fff;
+
+    color: #000000;
+
+    box-sizing: border-box;
+
+    line-height: 130%;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    outline: none;
+}
+
+.price-form .price-input::placeholder {
+    color: #5d5d5f;
+}
+
+.price-form .price-input {
+    margin-bottom: 15px
+}
+
+.price .button {
+    width: 344px;
+}
+
+.price .price-image {
+    position: absolute;
+    
+    bottom: 0px;
+    left: 401px;
+}
+
+
+
+footer.footer {
+    border-top: 1px solid #E5E5E5;
+
+    padding: 25px;
+}
+
+.footer .container {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+footer .container div.rights {
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #030305;
+
+    line-height: 18px;
+}
